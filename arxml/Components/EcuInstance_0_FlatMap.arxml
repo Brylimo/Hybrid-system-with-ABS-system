@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>EcuInstance_0_FlatView</SHORT-NAME>
+      <ELEMENTS>
+        <FLAT-MAP>
+          <SHORT-NAME>EcuInstance_0_FlatMap</SHORT-NAME>
+          <INSTANCES>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_ACT_MOTOR_COMP</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_MotorComposition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_ACT_MOTOR_COMP</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_MOTOR_COMP</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_APP_BRAKE_CONTROLL_COMP</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/CPT_APP_BRAKE_CONTROLL_COMP</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_APP_MOTOR_COMP</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_MotorComposition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_APP_MOTOR_COMP</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_AccelControlAPP</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/AComp/AComposition/CPT_AccelControlAPP</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_AccelPedalSen</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/AComp/AComposition/CPT_AccelPedalSen</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelPedalSen</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_AvgSpeed</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/AComp/AComposition/CPT_AvgSpeed</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_BrakePedalSen</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/AComp/AComposition/CPT_BrakePedalSen</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_BrakePedalSen</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_Cylinder_Sen</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_Engine_Composition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_Cylinder_Sen</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Cylinder_Sen</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_ECU_ABS</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_EngineApp</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_Engine_Composition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_EngineApp</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_Engine_Cycle_ACT</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_Engine_Composition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_Engine_Cycle_ACT</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Cycle_ACT</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_Engine_Gear_ACT</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_Engine_Composition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_Engine_Gear_ACT</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Gear_ACT</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_GearModeSen</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/AComp/AComposition/CPT_GearModeSen</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_GearModeSen</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_SEN_BATT_COMP</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_MotorComposition</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_SEN_BATT_COMP</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SEN_BATT_COMP</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>CPT_SpeedSen</SHORT-NAME>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_SpeedSen</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>accel_value</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>1</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AComp/AComposition/CPT_AccelPedalSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/AccelPedalSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Accel_AppValue/accel_value</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelPedalSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/AccelPedalSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Accel_AppValue/accel_value</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>avg_speed_data</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>3</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AComp/AComposition/CPT_AvgSpeed</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/AComp/AvgSpeed/P_avg_speed</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/AComp/SR_AvgSpeed/avg_speed_data</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/AComp/AvgSpeed/P_avg_speed</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/AComp/SR_AvgSpeed/avg_speed_data</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>backleft</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>4</CSE-CODE>
+                      <CSE-CODE-FACTOR>9</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_SpeedSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Speeds_AppValue/backleft</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Speeds_AppValue/backleft</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>backright</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>4</CSE-CODE>
+                      <CSE-CODE-FACTOR>9</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_SpeedSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Speeds_AppValue/backright</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Speeds_AppValue/backright</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>batt_data</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>3</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_MotorComposition</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_SEN_BATT_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/SEN_BATT_COMP/SR_BATT_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/MotorComposition/SR_BATT/batt_data</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SEN_BATT_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/SEN_BATT_COMP/SR_BATT_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/MotorComposition/SR_BATT/batt_data</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>brake_value</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>1</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AComp/AComposition/CPT_BrakePedalSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/BrakePedalSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Brake_AppValue/brake_value</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_BrakePedalSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/BrakePedalSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Brake_AppValue/brake_value</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>frontleft</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>4</CSE-CODE>
+                      <CSE-CODE-FACTOR>9</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_SpeedSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Speeds_AppValue/frontleft</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Speeds_AppValue/frontleft</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>frontright</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>4</CSE-CODE>
+                      <CSE-CODE-FACTOR>9</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_SpeedSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Speeds_AppValue/frontright</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Speeds_AppValue/frontright</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>gear_value</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>1</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AComp/AComposition/CPT_GearModeSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/GearModeSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Gear_AppValue/gear_value</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_GearModeSen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Sensors/GearModeSen/toApp_PPort</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Sensors/SR_Gear_AppValue/gear_value</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>infoArray</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>4</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_Engine_Composition</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_EngineApp</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/EngineApp/CycleData_Pport</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_cylinderActInfo/infoArray</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/EngineApp/CycleData_Pport</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_cylinderActInfo/infoArray</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>modedata</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>1000</CSE-CODE>
+                      <CSE-CODE-FACTOR>1</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_FL_Mode_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Application/SR_E_FL/modedata</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_FL_Mode_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Application/SR_E_FL/modedata</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>modedata_0</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>1000</CSE-CODE>
+                      <CSE-CODE-FACTOR>1</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_FR_Mode_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Application/SR_E_FR/modedata</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_FR_Mode_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Application/SR_E_FR/modedata</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>modedata_1</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>1000</CSE-CODE>
+                      <CSE-CODE-FACTOR>1</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_RL_Mode_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Application/SR_E_RL/modedata</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_RL_Mode_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Application/SR_E_RL/modedata</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>modedata_2</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>1000</CSE-CODE>
+                      <CSE-CODE-FACTOR>1</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_RR_Mode_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Application/SR_E_RR/modedata</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_RR_Mode_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Application/SR_E_RR/modedata</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>motor_speed_data</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>3</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_MotorComposition</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_APP_MOTOR_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/SR_MOTOR_SPEED_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/MotorComposition/SR_MOTOR_SPEED/motor_speed_data</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/SR_MOTOR_SPEED_Send</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/MotorComposition/SR_MOTOR_SPEED/motor_speed_data</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>powerValue</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>3</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AComp/AComposition/CPT_AccelControlAPP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/AComp/AccelControlAPP/P_EnginePower</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_EnginePower/powerValue</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/AComp/AccelControlAPP/P_EnginePower</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_EnginePower/powerValue</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>pwm_data</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>3</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/AComp/AComposition/CPT_AccelControlAPP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/AComp/AccelControlAPP/P_PWM</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/MotorComposition/SR_PWM/pwm_data</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/AComp/AccelControlAPP/P_PWM</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/MotorComposition/SR_PWM/pwm_data</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>pressure</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>3</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_Engine_Composition</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_Cylinder_Sen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/Cylinder_Sen/Pport</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_Cylin_AppValue/pressure</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Cylinder_Sen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/Cylinder_Sen/Pport</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_Cylin_AppValue/pressure</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+            <FLAT-INSTANCE-DESCRIPTOR>
+              <SHORT-NAME>temperature</SHORT-NAME>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <SW-REFRESH-TIMING>
+                      <CSE-CODE>5</CSE-CODE>
+                      <CSE-CODE-FACTOR>3</CSE-CODE-FACTOR>
+                    </SW-REFRESH-TIMING>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+              <UPSTREAM-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/VRSYS/Vrsys/RootSwCompositionPrototype_0</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_Engine_Composition</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_Cylinder_Sen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/Cylinder_Sen/Pport</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_Cylin_AppValue/temperature</TARGET-REF>
+              </UPSTREAM-REFERENCE-IREF>
+              <ECU-EXTRACT-REFERENCE-IREF>
+                <CONTEXT-ELEMENT-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Cylinder_Sen</CONTEXT-ELEMENT-REF>
+                <CONTEXT-ELEMENT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/Cylinder_Sen/Pport</CONTEXT-ELEMENT-REF>
+                <TARGET-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_Cylin_AppValue/temperature</TARGET-REF>
+              </ECU-EXTRACT-REFERENCE-IREF>
+            </FLAT-INSTANCE-DESCRIPTOR>
+          </INSTANCES>
+        </FLAT-MAP>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

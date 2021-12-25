@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>MotorComposition</SHORT-NAME>
+      <ELEMENTS>
+        <SENDER-RECEIVER-INTERFACE>
+          <SHORT-NAME>SR_PWM</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE>
+              <SHORT-NAME>pwm_data</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint8</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <COMPOSITION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>MotorComposition</SHORT-NAME>
+          <PORTS>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>SR_PWM_Recv_0</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/MotorComposition/SR_PWM</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE>
+              <SHORT-NAME>TR_BATT_LOW_set_1</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="TRIGGER-INTERFACE">/MotorComposition/TR_BATT_LOW</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>CS_MOTOR_Client</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MotorComposition/CS_MOTOR_ACT</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>CS_BATT_Receive</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MotorComposition/CS_BATT_SEN</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE UUID="b888db7a-b6a2-4853-9e6e-b5def8573bce">
+              <SHORT-NAME>CPT_APP_MOTOR_COMP</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/MotorComposition/APP_MOTOR_COMP</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="8a9ae355-afff-4508-b16d-c5e9fc3b3973">
+              <SHORT-NAME>CPT_SEN_BATT_COMP</SHORT-NAME>
+              <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/MotorComposition/SEN_BATT_COMP</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="0669c964-c5a9-49b9-8bd6-9908e9c9ac1e">
+              <SHORT-NAME>CPT_ACT_MOTOR_COMP</SHORT-NAME>
+              <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/MotorComposition/ACT_MOTOR_COMP</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_APP_MOTOR_COMP_SR_MOTOR_SPEED_Send_CPT_ACT_MOTOR_COMP_SR_MOTOR_SPEED_Recv</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_APP_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/SR_MOTOR_SPEED_Send</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_ACT_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/ACT_MOTOR_COMP/SR_MOTOR_SPEED_Recv</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_SEN_BATT_COMP_SR_BATT_Send_CPT_APP_MOTOR_COMP_SR_BATT_Recv</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_SEN_BATT_COMP</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/SEN_BATT_COMP/SR_BATT_Send</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_APP_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/SR_BATT_Recv</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>DSC_CPT_APP_MOTOR_COMP_SR_PWM_Recv_SR_PWM_Recv_0</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_APP_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/SR_PWM_Recv</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/MotorComposition/SR_PWM_Recv_0</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>DSC_CPT_APP_MOTOR_COMP_TR_BATT_LOW_set_TR_BATT_LOW_set_1</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <P-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_APP_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                  <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/TR_BATT_LOW_set</TARGET-P-PORT-REF>
+                </P-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/MotorComposition/TR_BATT_LOW_set_1</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>DSC_CPT_ACT_MOTOR_COMP_CS_MOTOR_Client_CS_MOTOR_Client</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_ACT_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/ACT_MOTOR_COMP/CS_MOTOR_Client</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/MotorComposition/CS_MOTOR_Client</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>DSC_CPT_SEN_BATT_COMP_CS_BATT_Receive_CS_BATT_Receive</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/MotorComposition/MotorComposition/CPT_SEN_BATT_COMP</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/SEN_BATT_COMP/CS_BATT_Receive</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/MotorComposition/CS_BATT_Receive</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>APP_MOTOR_COMP</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="be823f8c-9e1b-48cb-9ac2-72f16eccbd50">
+              <SHORT-NAME>SR_PWM_Recv</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/MotorComposition/SR_PWM</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="9699bdee-83a1-4823-9bd3-05802e3df151">
+              <SHORT-NAME>SR_MOTOR_SPEED_Send</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/MotorComposition/SR_MOTOR_SPEED</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="f333f2e0-e6c4-454d-8d83-509a0ac39495">
+              <SHORT-NAME>SR_BATT_Recv</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/MotorComposition/SR_BATT</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="a3832fc5-617a-477f-9365-6fa704b6b077">
+              <SHORT-NAME>TR_BATT_LOW_set</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="TRIGGER-INTERFACE">/MotorComposition/TR_BATT_LOW</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="45593d2e-6fd0-4e56-9046-5a75e77ecd66">
+              <SHORT-NAME>IB_APP_MOTOR</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="974943e4-059e-4a3b-b32a-8ebf3f071c70">
+                  <SHORT-NAME>TE_300ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MotorComposition/APP_MOTOR_COMP/IB_APP_MOTOR/RE_APP_MOTOR_ACT</START-ON-EVENT-REF>
+                  <PERIOD>0.3</PERIOD>
+                </TIMING-EVENT>
+                <TIMING-EVENT UUID="1b44efe2-6028-4333-affb-54909113a40f">
+                  <SHORT-NAME>TimingEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MotorComposition/APP_MOTOR_COMP/IB_APP_MOTOR/RE_APP_MOTOR_batt_pwm</START-ON-EVENT-REF>
+                  <PERIOD>0.3</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="6b568d0f-219f-4b0d-b07c-af868b73d78b">
+                  <SHORT-NAME>RE_APP_MOTOR_batt_pwm</SHORT-NAME>
+                  <DATA-RECEIVE-POINT-BY-VALUES>
+                    <VARIABLE-ACCESS UUID="8272a9dd-f7a2-4d13-b75f-90f6d41f4496">
+                      <SHORT-NAME>DRPV_batt_data_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/SR_BATT_Recv</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/MotorComposition/SR_BATT/batt_data</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="1cd7cf31-6b6e-41eb-9c9b-01dd6b1ec002">
+                      <SHORT-NAME>DRPV_pwm_data_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/SR_PWM_Recv</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/MotorComposition/SR_PWM/pwm_data</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-VALUES>
+                  <EXTERNAL-TRIGGERING-POINTS>
+                    <EXTERNAL-TRIGGERING-POINT>
+                      <TRIGGER-IREF>
+                        <P-TRIGGER-IN-ATOMIC-SWC-TYPE-INSTANCE-REF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/TR_BATT_LOW_set</CONTEXT-P-PORT-REF>
+                          <TARGET-TRIGGER-REF DEST="TRIGGER">/MotorComposition/TR_BATT_LOW/normal</TARGET-TRIGGER-REF>
+                        </P-TRIGGER-IN-ATOMIC-SWC-TYPE-INSTANCE-REF>
+                      </TRIGGER-IREF>
+                    </EXTERNAL-TRIGGERING-POINT>
+                    <EXTERNAL-TRIGGERING-POINT>
+                      <TRIGGER-IREF>
+                        <P-TRIGGER-IN-ATOMIC-SWC-TYPE-INSTANCE-REF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/TR_BATT_LOW_set</CONTEXT-P-PORT-REF>
+                          <TARGET-TRIGGER-REF DEST="TRIGGER">/MotorComposition/TR_BATT_LOW/low</TARGET-TRIGGER-REF>
+                        </P-TRIGGER-IN-ATOMIC-SWC-TYPE-INSTANCE-REF>
+                      </TRIGGER-IREF>
+                    </EXTERNAL-TRIGGERING-POINT>
+                  </EXTERNAL-TRIGGERING-POINTS>
+                  <SYMBOL>RE_APP_MOTOR_batt_pwm_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="e70543ba-2010-4985-add3-bd0f78678858">
+                  <SHORT-NAME>RE_APP_MOTOR_ACT</SHORT-NAME>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="56279993-04f1-4867-b432-fa0f34a08f9a">
+                      <SHORT-NAME>DSP_motor_speed_data_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/SR_MOTOR_SPEED_Send</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/MotorComposition/SR_MOTOR_SPEED/motor_speed_data</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SYMBOL>RE_APP_MOTOR_ACT_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+        <SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+          <SHORT-NAME>ACT_MOTOR_COMP</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="feb3bf17-4b0a-46a3-917f-576bb01d9107">
+              <SHORT-NAME>CS_MOTOR_Client</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MotorComposition/CS_MOTOR_ACT</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="9701e2f9-9868-426e-869d-c15cd6ed1d21">
+              <SHORT-NAME>SR_MOTOR_SPEED_Recv</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/MotorComposition/SR_MOTOR_SPEED</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="34b5f738-662b-4ec0-aaf3-3b44a585eb92">
+              <SHORT-NAME>IB_ACT_MOTOR_COMP</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="80a5e7b3-9ddd-4661-adf3-a3c76c47734c">
+                  <SHORT-NAME>TE_ServerCall_100ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MotorComposition/ACT_MOTOR_COMP/IB_ACT_MOTOR_COMP/RE_ACT_MOTOR</START-ON-EVENT-REF>
+                  <PERIOD>0.3</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="c75710c2-6129-4840-9944-744b50d591a8">
+                  <SHORT-NAME>RE_ACT_MOTOR</SHORT-NAME>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="53db1b72-a95b-4d62-b886-a5f15874aa16">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/ACT_MOTOR_COMP/CS_MOTOR_Client</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MotorComposition/CS_MOTOR_ACT/motor_act_op</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_ACT_MOTOR_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="6255f436-834a-46c3-a3b0-da38621f5de4">
+                  <SHORT-NAME>RE_ACT_MOTOR_Recv</SHORT-NAME>
+                  <DATA-RECEIVE-POINT-BY-VALUES>
+                    <VARIABLE-ACCESS UUID="c4c52a4f-56c1-4555-a8d2-ef95938338f2">
+                      <SHORT-NAME>DRPV_motor_speed_data_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/ACT_MOTOR_COMP/SR_MOTOR_SPEED_Recv</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/MotorComposition/SR_MOTOR_SPEED/motor_speed_data</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-VALUES>
+                  <SYMBOL>RE_ACT_MOTOR_Recv_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+        <SENDER-RECEIVER-INTERFACE>
+          <SHORT-NAME>SR_MOTOR_SPEED</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE>
+              <SHORT-NAME>motor_speed_data</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+          <SHORT-NAME>SEN_BATT_COMP</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="0ffd3588-9d96-4fcd-8d06-7cf31f979cdd">
+              <SHORT-NAME>SR_BATT_Send</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/MotorComposition/SR_BATT</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="1417f0f7-df38-4e91-bb01-a687cc857b2f">
+              <SHORT-NAME>CS_BATT_Receive</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MotorComposition/CS_BATT_SEN</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="6003dae6-66ba-428b-9d08-fb9eb5c3466a">
+              <SHORT-NAME>IB_SEN_BATT_COMP</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="398cefe3-de96-4281-90e7-05402c761d80">
+                  <SHORT-NAME>TE_300ms</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/MotorComposition/SEN_BATT_COMP/IB_SEN_BATT_COMP/RE_SEN_BATT</START-ON-EVENT-REF>
+                  <PERIOD>0.3</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="67945732-212a-46b8-84fe-fc28512831e1">
+                  <SHORT-NAME>RE_SEN_BATT</SHORT-NAME>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="e99adf5e-9951-4d03-ae41-84cd6b10fb64">
+                      <SHORT-NAME>DSP_batt_data_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/SEN_BATT_COMP/SR_BATT_Send</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/MotorComposition/SR_BATT/batt_data</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="ede3d02d-570e-4674-9542-2d2dbd75031c">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/SEN_BATT_COMP/CS_BATT_Receive</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MotorComposition/CS_BATT_SEN/batt_sen_op</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_SEN_BATT_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_MOTOR_ACT</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>motor_act_op</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>motor_act_data</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+                  <DIRECTION>IN</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_BATT_SEN</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>batt_sen_op</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>batt_sen_data</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE>
+          <SHORT-NAME>SR_BATT</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE>
+              <SHORT-NAME>batt_data</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/uint8</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <TRIGGER-INTERFACE>
+          <SHORT-NAME>TR_BATT_LOW</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <TRIGGERS>
+            <TRIGGER>
+              <SHORT-NAME>normal</SHORT-NAME>
+              <TRIGGER-PERIOD />
+            </TRIGGER>
+            <TRIGGER>
+              <SHORT-NAME>low</SHORT-NAME>
+              <TRIGGER-PERIOD />
+            </TRIGGER>
+          </TRIGGERS>
+        </TRIGGER-INTERFACE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

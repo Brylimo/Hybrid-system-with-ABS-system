@@ -1,0 +1,8 @@
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/EVEsrc/startVecu.cpp:23:6: warning: 'void startVecu(int, const char**)' redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+ void startVecu(int argc, const char **argv)
+      ^~~~~~~~~
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/EVEsrc/Os_Hooks.c: In function 'Os_Cbk_Idle':
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/EVEsrc/Os_Hooks.c:41:9: warning: implicit declaration of function 'Rte_Start'; did you mean 'Restart'? [-Wimplicit-function-declaration]
+         Rte_Start();
+         ^~~~~~~~~
+         Restart

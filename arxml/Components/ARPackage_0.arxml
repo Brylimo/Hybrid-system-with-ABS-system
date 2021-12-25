@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ARPackage_0</SHORT-NAME>
+      <ELEMENTS>
+        <COMPOSITION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>TopLevelComposition</SHORT-NAME>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE UUID="e0c227d1-bf98-410e-b1db-91e0aa4ccd78">
+              <SHORT-NAME>CPT_SpeedSen</SHORT-NAME>
+              <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Sensors/SpeedSen</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="e0528c5a-caeb-45ad-ae2c-e7f1d658306b">
+              <SHORT-NAME>CPT_ECU_ABS</SHORT-NAME>
+              <TYPE-TREF DEST="ECU-ABSTRACTION-SW-COMPONENT-TYPE">/ECU_Abstraction/ECU_ABS</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="40c386f5-b834-4917-8a5c-4ee41f12f8a6">
+              <SHORT-NAME>CPT_Engine_Composition</SHORT-NAME>
+              <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Engine_Composition/Engine_Composition</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="1bd90a48-cd5b-4275-9985-56692cf27772">
+              <SHORT-NAME>CPT_BRAKE_COMPOSITION</SHORT-NAME>
+              <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="5ff0188d-efc0-4a1e-814b-74f6feab70ef">
+              <SHORT-NAME>CPT_MotorComposition</SHORT-NAME>
+              <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/MotorComposition/MotorComposition</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="4385f566-1e07-4c76-9195-8e92cfafa12f">
+              <SHORT-NAME>CPT_AComposition</SHORT-NAME>
+              <TYPE-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/AComp/AComposition</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_PTireRPM_CPT_SpeedSen_RPM_RPort</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PTireRPM</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_SpeedSen</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Sensors/SpeedSen/RPort</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_ActSEngine_CPT_Engine_Composition_Engine_Cleintport</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/ActSEngine</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_Engine_Composition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Composition/Engine_Cleintport</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_ActSGear_CPT_Engine_Composition_phyGear_relayPport_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/ActSGear</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_Engine_Composition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Composition/phyGear_relayPport_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_SpeedSen_toApp_PPort_CPT_BRAKE_COMPOSITION_APP_Speed_Receive_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_SpeedSen</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/APP_Speed_Receive_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_PHMFrontL_CPT_BRAKE_COMPOSITION_ACT_HM_FL_Client_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMFrontL</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/ACT_HM_FL_Client_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_PHMFrontR_CPT_BRAKE_COMPOSITION_ACT_HM_FR_Client_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMFrontR</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/ACT_HM_FR_Client_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_PHMRearL_CPT_BRAKE_COMPOSITION_ACT_HM_RL_Client_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMRearL</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/ACT_HM_RL_Client_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_PHMRearR_CPT_BRAKE_COMPOSITION_ACT_HM_RR_Client_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMRearR</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_BRAKE_COMPOSITION</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Toplevelbrakecomposition/BRAKE_COMPOSITION/ACT_HM_RR_Client_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_CS_MOTOR_Server_CPT_MotorComposition_CS_MOTOR_Client</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/CS_MOTOR_Server</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_MotorComposition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/MotorComposition/CS_MOTOR_Client</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_CS_BATT_Server_CPT_MotorComposition_CS_BATT_Receive</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/CS_BATT_Server</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_MotorComposition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/MotorComposition/CS_BATT_Receive</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_SpeedSen_toApp_PPort_CPT_AComposition_R_4speeds</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_SpeedSen</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AComp/AComposition/R_4speeds</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_PAccelPedal_CPT_AComposition_RPort</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PAccelPedal</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AComp/AComposition/RPort</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_AComposition_P_EnginePower_CPT_Engine_Composition_Power_Rport</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AComp/AComposition/P_EnginePower</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_Engine_Composition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Composition/Power_Rport</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_PGearMode_CPT_AComposition_RPort_1</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PGearMode</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AComp/AComposition/RPort_1</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_AComposition_P_PWM_CPT_MotorComposition_SR_PWM_Recv_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AComp/AComposition/P_PWM</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_MotorComposition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/MotorComposition/SR_PWM_Recv_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_PBrakePedal_CPT_AComposition_RPort_0</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PBrakePedal</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AComp/AComposition/RPort_0</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_ECU_ABS_PCylinder_CPT_Engine_Composition_Rport</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PCylinder</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_Engine_Composition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Composition/Rport</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_MotorComposition_TR_BATT_LOW_set_1_CPT_AComposition_R_BatteryStat</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_MotorComposition</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/MotorComposition/TR_BATT_LOW_set_1</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/ARPackage_0/TopLevelComposition/CPT_AComposition</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AComp/AComposition/R_BatteryStat</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE UUID="51ff6200-ac0a-4c75-aead-11fb2a92501a">
+          <SHORT-NAME>PortInterfaceMappingSets</SHORT-NAME>
+          <ELEMENTS>
+            <PORT-INTERFACE-MAPPING-SET UUID="608cd4b3-ec70-461d-94bc-61ebd3ea6941">
+              <SHORT-NAME>PIMSet_TopLevelComposition</SHORT-NAME>
+            </PORT-INTERFACE-MAPPING-SET>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

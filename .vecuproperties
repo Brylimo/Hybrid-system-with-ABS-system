@@ -1,0 +1,6 @@
+#Sun Oct 24 16:01:13 KST 2021
+version=3.5
+eveSrc=src/EVEsrc
+eveParamTemplates=arxml/EVE/ECUParameters
+eveOsTemplates=arxml/EVE/RTA-OS
+configuration=configuration

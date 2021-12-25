@@ -1,0 +1,12 @@
+Start at 2021-10-24 오후 4:28:08
+RTA-OS Code Generator 
+Version 6.0.0.29441, Copyright © ETAS 2020
+Warning: The AR-PACKAGE being imported from file 'C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTE/osNeeds.arxml' has a different name to that already in the system. Expected 'OS'.
+ (Location = C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTE/osNeeds.arxml)
+Stop at 2021-10-24 오후 4:28:51
+Warning: The stack used when idle should be specified when the system uses events.
+Warning: The stack used by Category 2 ISRs should be specified when the system uses events.
+Warning: The stack overheads for ISR activation of tasks should be specified when the system uses events.
+
+Errors: 0, Warnings: 4.
+Stop at 2021-10-24 오후 4:28:51

@@ -1,0 +1,6 @@
+#generic configuration to use ETAS devices first.
+allow *ES*
+allow *VLoopBack*
+allow *VN*
+allow *VXL*
+allow *

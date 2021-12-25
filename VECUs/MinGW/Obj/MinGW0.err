@@ -1,0 +1,69 @@
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:7:37: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor AccelSensor("AccelSensor");
+                                     ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:8:37: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor BrakeSensor("BrakeSensor");
+                                     ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:9:35: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor GearSwitch("GearSwitch");
+                                   ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:11:37: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor SpinSensor1("SpinSensor1");
+                                     ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:12:37: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor SpinSensor2("SpinSensor2");
+                                     ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:13:37: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor SpinSensor3("SpinSensor3");
+                                     ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:14:37: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor SpinSensor4("SpinSensor4");
+                                     ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:16:51: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor CylinderTempSensor("CylinderTempSensor");
+                                                   ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:17:53: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor CylinderPressSensor("CylinderPressSensor");
+                                                     ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:19:45: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor FL_Speed_Sensor("FL_Speed_Sensor");
+                                             ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:21:41: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor BatterySensor("BatterySensor");
+                                         ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:24:59: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaActuator FL_HydraulicModulator("FL_HydraulicModulator");
+                                                           ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:25:59: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaActuator FR_HydraulicModulator("FR_HydraulicModulator");
+                                                           ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:26:59: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaActuator RL_HydraulicModulator("RL_HydraulicModulator");
+                                                           ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:27:59: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaActuator RR_HydraulicModulator("RR_HydraulicModulator");
+                                                           ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:29:53: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaActuator PhysicGearActuator("PhysicGearActuator");
+                                                     ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:30:37: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaActuator Engineflag("Engineflag");
+                                     ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:31:57: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaActuator EngineIgniteActuator("EngineIgniteActuator");
+                                                         ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:32:53: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaActuator EngineFuelActuator("EngineFuelActuator");
+                                                     ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:34:43: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaActuator MotorActuator("MotorActuator");
+                                           ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:111:23: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ Logger Status("Status");
+                       ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:126:37: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor DebugSensor("DebugSensor");
+                                     ^
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp:131:33: warning: ISO C++ forbids converting a string constant to 'vrtaTextPtr' {aka 'char*'} [-Wwrite-strings]
+ vrtaSensor tempInput("tempInput");
+                                 ^

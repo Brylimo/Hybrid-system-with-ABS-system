@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>EcuInstance_0_FlatView</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>SwComponentTypes</SHORT-NAME>
+          <ELEMENTS>
+            <COMPOSITION-SW-COMPONENT-TYPE>
+              <SHORT-NAME>EcuInstance_0_FlatView</SHORT-NAME>
+              <COMPONENTS>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_FRONTL_COMP</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_FRONTR_COMP</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_REARL_COMP</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_REARR_COMP</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ACT_MOTOR_COMP</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/MotorComposition/ACT_MOTOR_COMP</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_APP_BRAKE_CONTROLL_COMP</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Application/APP_BRAKE_CONTROLL_COMP</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_APP_MOTOR_COMP</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/MotorComposition/APP_MOTOR_COMP</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_AccelControlAPP</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/AComp/AccelControlAPP</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_AccelPedalSen</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Sensors/AccelPedalSen</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_AvgSpeed</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/AComp/AvgSpeed</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_BrakePedalSen</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Sensors/BrakePedalSen</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_Cylinder_Sen</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Engine_Composition/Cylinder_Sen</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_ECU_ABS</SHORT-NAME>
+                  <TYPE-TREF DEST="ECU-ABSTRACTION-SW-COMPONENT-TYPE">/ECU_Abstraction/ECU_ABS</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_EngineApp</SHORT-NAME>
+                  <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Engine_Composition/EngineApp</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_Engine_Cycle_ACT</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Engine_Composition/ARPackage_1/Engine_Cycle_ACT</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_Engine_Gear_ACT</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Engine_Composition/Engine_Gear_ACT</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_GearModeSen</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Sensors/GearModeSen</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_SEN_BATT_COMP</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/MotorComposition/SEN_BATT_COMP</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+                <SW-COMPONENT-PROTOTYPE>
+                  <SHORT-NAME>CPT_SpeedSen</SHORT-NAME>
+                  <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Sensors/SpeedSen</TYPE-TREF>
+                </SW-COMPONENT-PROTOTYPE>
+              </COMPONENTS>
+              <CONNECTORS>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_APP_BRAKE_CONTROLL_COMP_APP_FL_Mode_Send_CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP_ACT_HM_FL_Recv</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_FL_Mode_Send</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_FRONTL_COMP/ACT_HM_FL_Recv</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_APP_BRAKE_CONTROLL_COMP_APP_FR_Mode_Send_CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP_ACT_HM_FR_Recv</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_FR_Mode_Send</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_FRONTR_COMP/ACT_HM_FR_Recv</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_APP_BRAKE_CONTROLL_COMP_APP_RL_Mode_Send_CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP_ACT_HM_RL_Recv</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_RL_Mode_Send</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_REARL_COMP/ACT_HM_RL_Recv</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_APP_BRAKE_CONTROLL_COMP_APP_RR_Mode_Send_CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP_ACT_HM_RR_Recv</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_RR_Mode_Send</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_REARR_COMP/ACT_HM_RR_Recv</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_APP_MOTOR_COMP_SR_MOTOR_SPEED_Send_CPT_ACT_MOTOR_COMP_SR_MOTOR_SPEED_Recv</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/SR_MOTOR_SPEED_Send</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/ACT_MOTOR_COMP/SR_MOTOR_SPEED_Recv</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_APP_MOTOR_COMP_TR_BATT_LOW_set_CPT_AccelControlAPP_R_BatteryStat</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/TR_BATT_LOW_set</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AComp/AccelControlAPP/R_BatteryStat</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_AccelControlAPP_P_EnginePower_CPT_EngineApp_Power_Rport</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AComp/AccelControlAPP/P_EnginePower</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/EngineApp/Power_Rport</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_AccelControlAPP_P_PWM_CPT_APP_MOTOR_COMP_SR_PWM_Recv</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AComp/AccelControlAPP/P_PWM</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/SR_PWM_Recv</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_AccelPedalSen_toApp_PPort_CPT_AccelControlAPP_R_Accel</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelPedalSen</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Sensors/AccelPedalSen/toApp_PPort</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AComp/AccelControlAPP/R_Accel</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_AvgSpeed_P_avg_speed_CPT_AccelControlAPP_R_AvgSpeed</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/AComp/AvgSpeed/P_avg_speed</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AComp/AccelControlAPP/R_AvgSpeed</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_BrakePedalSen_toApp_PPort_CPT_AccelControlAPP_R_Brake</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_BrakePedalSen</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Sensors/BrakePedalSen/toApp_PPort</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AComp/AccelControlAPP/R_Brake</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_Cylinder_Sen_Pport_CPT_EngineApp_Cylinder_Rport</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Cylinder_Sen</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/Cylinder_Sen/Pport</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/EngineApp/Cylinder_Rport</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_ActSEngine_CPT_Engine_Cycle_ACT_Engine_Cleintport</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/ActSEngine</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Cycle_ACT</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/ARPackage_1/Engine_Cycle_ACT/Engine_Cleintport</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_ActSGear_CPT_Engine_Gear_ACT_phyGear_relayPport</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/ActSGear</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Gear_ACT</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Gear_ACT/phyGear_relayPport</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_CS_BATT_Server_CPT_SEN_BATT_COMP_CS_BATT_Receive</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/CS_BATT_Server</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SEN_BATT_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/SEN_BATT_COMP/CS_BATT_Receive</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_CS_MOTOR_Server_CPT_ACT_MOTOR_COMP_CS_MOTOR_Client</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/CS_MOTOR_Server</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/ACT_MOTOR_COMP/CS_MOTOR_Client</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_PAccelPedal_CPT_AccelPedalSen_RPort</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PAccelPedal</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelPedalSen</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Sensors/AccelPedalSen/RPort</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_PBrakePedal_CPT_BrakePedalSen_RPort</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PBrakePedal</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_BrakePedalSen</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Sensors/BrakePedalSen/RPort</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_PCylinder_CPT_Cylinder_Sen_Rport</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PCylinder</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Cylinder_Sen</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Cylinder_Sen/Rport</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_PGearMode_CPT_GearModeSen_RPort</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PGearMode</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_GearModeSen</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Sensors/GearModeSen/RPort</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_PHMFrontL_CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP_ACT_HM_FL_Client</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMFrontL</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_FRONTL_COMP/ACT_HM_FL_Client</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_PHMFrontR_CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP_ACT_HM_FR_Client</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMFrontR</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_FRONTR_COMP/ACT_HM_FR_Client</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_PHMRearL_CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP_ACT_HM_RL_Client</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMRearL</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_REARL_COMP/ACT_HM_RL_Client</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_PHMRearR_CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP_ACT_HM_RR_Client</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMRearR</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Actuators/ACT_HYDRAULIC_MODULATOR_REARR_COMP/ACT_HM_RR_Client</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_ECU_ABS_PTireRPM_CPT_SpeedSen_RPort</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PTireRPM</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Sensors/SpeedSen/RPort</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_EngineApp_CycleData_Pport_CPT_Engine_Cycle_ACT_CycleData_Rport</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/EngineApp/CycleData_Pport</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Cycle_ACT</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/ARPackage_1/Engine_Cycle_ACT/CycleData_Rport</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_EngineApp_PhyGear_Pport_CPT_Engine_Gear_ACT_phyGear_Rport</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/EngineApp/PhyGear_Pport</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Gear_ACT</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Gear_ACT/phyGear_Rport</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_GearModeSen_toApp_PPort_CPT_AccelControlAPP_R_Gear</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_GearModeSen</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Sensors/GearModeSen/toApp_PPort</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AComp/AccelControlAPP/R_Gear</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_SEN_BATT_COMP_SR_BATT_Send_CPT_APP_MOTOR_COMP_SR_BATT_Recv</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SEN_BATT_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/MotorComposition/SEN_BATT_COMP/SR_BATT_Send</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/MotorComposition/APP_MOTOR_COMP/SR_BATT_Recv</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_SpeedSen_toApp_PPort_CPT_APP_BRAKE_CONTROLL_COMP_APP_Speed_Receive</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Application/APP_BRAKE_CONTROLL_COMP/APP_Speed_Receive</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+                <ASSEMBLY-SW-CONNECTOR>
+                  <SHORT-NAME>ASC_CPT_SpeedSen_toApp_PPort_CPT_AvgSpeed_R_4speeds</SHORT-NAME>
+                  <PROVIDER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen</CONTEXT-COMPONENT-REF>
+                    <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Sensors/SpeedSen/toApp_PPort</TARGET-P-PORT-REF>
+                  </PROVIDER-IREF>
+                  <REQUESTER-IREF>
+                    <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed</CONTEXT-COMPONENT-REF>
+                    <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/AComp/AvgSpeed/R_4speeds</TARGET-R-PORT-REF>
+                  </REQUESTER-IREF>
+                </ASSEMBLY-SW-CONNECTOR>
+              </CONNECTORS>
+            </COMPOSITION-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

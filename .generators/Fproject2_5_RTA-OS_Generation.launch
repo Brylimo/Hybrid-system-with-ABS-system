@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.etas.vaptools.rtaos.generator.core.LaunchConfigurationType">
+<stringAttribute key="VECU_NAME" value="Fproject2_5"/>
+<listAttribute key="arxml_files">
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/EVE/RTA-OS/osVECU.arxml}"/>
+</listAttribute>
+<stringAttribute key="output_loc" value="${workspace_loc:/Fproject2_5MinGW/RTAOS}"/>
+</launchConfiguration>

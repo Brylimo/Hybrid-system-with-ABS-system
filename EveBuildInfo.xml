@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><BakeConfiguration>
+<stringAttribute key="VECU_NAME" value="Fproject2_5"/>
+<stringAttribute key="ecu_instance" value="/VRSYS/EcuInstance_0"/>
+<stringAttribute key="ecu_arxml_path" value=".\../../../ISOLAR-AB/workspace/Fproject2/VRSYS.arxml"/>
+<stringAttribute key="target" value="MinGW"/>
+<stringAttribute key="host" value="127.0.0.1"/>
+<stringAttribute key="xcp_port" value="18041"/>
+<stringAttribute key="run_location" value="@"/>
+<stringAttribute key="rtaos_depends_on_rte" value="true"/>
+<stringAttribute key="freeze_rte" value="false"/>
+<stringAttribute key="freeze_rtaos" value="false"/>
+<stringAttribute key="freeze_mcal" value="false"/>
+<stringAttribute key="freeze_build" value="false"/>
+<stringAttribute key="incremental_build" value="true"/>
+<stringAttribute key="build_config" value="SVNPTEFSX0VWRXx8SVNPTEFSX0VWRV9SVU5USU1F"/>
+<Build>
+<listAttribute key="exclude_root" value="./src/Gcov"/>
+<listAttribute key="include_root" value="./src">
+<listEntry value="*.h"/>
+<listEntry value="*.c"/>
+<listEntry value="*.o"/>
+<listEntry value="*.cpp"/>
+<listEntry value="*.hpp"/>
+</listAttribute>
+</Build>
+<MCAL/>
+<RTA-OS>
+<listAttribute key="include_root">
+<listEntry value=".\arxml/EVE/RTA-OS/osVECU.arxml"/>
+</listAttribute>
+</RTA-OS>
+<RTE>
+<option value="--strict-initial-values-check=warn --append-name-to-buffer=1 --samples=swc"/>
+<listAttribute key="include_root">
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/ISOLAR_PlatformTypes_Old.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/ARPackage_0.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/Toplevelbrakecomposition.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/Actuators.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/Engine_Composition.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/ARPackage_1.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/EcuInstance_0_FlatMap.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/MotorComposition.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/Application.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/VRSYS.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/MDG_INFO.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/ECU_Abstraction.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/Sensors.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/EcuInstance_0_FlatView_SWCD.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/AComp.arxml"/>
+<listEntry value=".\../../../ISOLAR-AB/workspace/Fproject2/Vrsys_EcuExtr.arxml"/>
+</listAttribute>
+</RTE>
+<RTE_DATA_BLOCK>
+<option rte_version="V5.10.0"/>
+</RTE_DATA_BLOCK>
+</BakeConfiguration>

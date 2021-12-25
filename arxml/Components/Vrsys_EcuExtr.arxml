@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Vrsys_EcuExtract</SHORT-NAME>
+      <ELEMENTS>
+        <SYSTEM>
+          <SHORT-NAME>EXTR_EcuInstance_0</SHORT-NAME>
+          <CATEGORY>ECU_EXTRACT</CATEGORY>
+          <ECU-EXTRACT-VERSION>1.0.0</ECU-EXTRACT-VERSION>
+          <FIBEX-ELEMENTS>
+            <FIBEX-ELEMENT-REF-CONDITIONAL>
+              <FIBEX-ELEMENT-REF DEST="ECU-INSTANCE">/VRSYS/EcuInstance_0</FIBEX-ELEMENT-REF>
+            </FIBEX-ELEMENT-REF-CONDITIONAL>
+          </FIBEX-ELEMENTS>
+          <MAPPINGS>
+            <SYSTEM-MAPPING>
+              <SHORT-NAME>SYSMPG_EcuInstance_0</SHORT-NAME>
+              <SW-MAPPINGS>
+                <SWC-TO-ECU-MAPPING>
+                  <SHORT-NAME>SwcToEcuMapping_0</SHORT-NAME>
+                  <COMPONENT-IREFS>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_MOTOR_COMP</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelPedalSen</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_BrakePedalSen</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Cylinder_Sen</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Cycle_ACT</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Gear_ACT</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_GearModeSen</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SEN_BATT_COMP</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                    <COMPONENT-IREF>
+                      <CONTEXT-COMPOSITION-REF DEST="ROOT-SW-COMPOSITION-PROTOTYPE">/Vrsys_EcuExtract/EXTR_EcuInstance_0/CPT_EcuInstance_0_FlatView</CONTEXT-COMPOSITION-REF>
+                      <TARGET-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen</TARGET-COMPONENT-REF>
+                    </COMPONENT-IREF>
+                  </COMPONENT-IREFS>
+                  <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/VRSYS/EcuInstance_0</ECU-INSTANCE-REF>
+                </SWC-TO-ECU-MAPPING>
+              </SW-MAPPINGS>
+            </SYSTEM-MAPPING>
+          </MAPPINGS>
+          <ROOT-SOFTWARE-COMPOSITIONS>
+            <ROOT-SW-COMPOSITION-PROTOTYPE>
+              <SHORT-NAME>CPT_EcuInstance_0_FlatView</SHORT-NAME>
+              <FLAT-MAP-REF DEST="FLAT-MAP">/EcuInstance_0_FlatView/EcuInstance_0_FlatMap</FLAT-MAP-REF>
+              <SOFTWARE-COMPOSITION-TREF DEST="COMPOSITION-SW-COMPONENT-TYPE">/EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView</SOFTWARE-COMPOSITION-TREF>
+            </ROOT-SW-COMPOSITION-PROTOTYPE>
+          </ROOT-SOFTWARE-COMPOSITIONS>
+          <SYSTEM-VERSION>1.0.0</SYSTEM-VERSION>
+        </SYSTEM>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>ECU_Abstraction</SHORT-NAME>
+      <ELEMENTS>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_Tire_RPM_Status</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>get_Tire_RPM</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>frontleft</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>frontright</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>backleft</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>backright</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_AccelPedal_Status</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>get_AccelPedal_Status</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>status</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint8</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_BrakePedal_Status</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>get_BrakePedal_Status</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>status</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint8</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_Gear_Mode_Status</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>get_Gear_Mode</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>gear_mode</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint8</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+        <ECU-ABSTRACTION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>ECU_ABS</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <P-PORT-PROTOTYPE UUID="264ca9df-1295-4535-b15c-3cc13b691bdb">
+              <SHORT-NAME>PTireRPM</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_Tire_RPM_Status/get_Tire_RPM</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ECU_Abstraction/CS_Tire_RPM_Status</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="d0c72133-9f24-4923-80ff-f3c2fd3cc549">
+              <SHORT-NAME>PAccelPedal</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_AccelPedal_Status/get_AccelPedal_Status</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ECU_Abstraction/CS_AccelPedal_Status</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="32ea966d-382e-4d04-99e6-76d4b2a96e35">
+              <SHORT-NAME>PBrakePedal</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_BrakePedal_Status/get_BrakePedal_Status</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ECU_Abstraction/CS_BrakePedal_Status</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="8c775042-ddfa-489b-a5fc-ae29e0c6150f">
+              <SHORT-NAME>PGearMode</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_Gear_Mode_Status/get_Gear_Mode</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ECU_Abstraction/CS_Gear_Mode_Status</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="8a56d3c3-aa5f-4fb1-9583-137ad0929d27">
+              <SHORT-NAME>ActSGear</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Engine_Composition/CS_PhyGear/set_phygear</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Engine_Composition/CS_PhyGear</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="89faa83c-4229-4e11-b996-0d7592507a04">
+              <SHORT-NAME>ActSEngine</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Engine_Composition/CS_Engine/set_engine</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Engine_Composition/CS_Engine</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="4161e62f-5eaf-4aa2-81c6-bb144e9b0323">
+              <SHORT-NAME>PCylinder</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Engine_Composition/CS_Cylinder_Status/get_cylinder_Status</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Engine_Composition/CS_Cylinder_Status</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="74c3d653-fd2c-4281-bf0b-62df8eb66bf6">
+              <SHORT-NAME>PHMFrontL</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_HM_FRONTL/set_E_op</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ECU_Abstraction/CS_HM_FRONTL</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="aede687e-ef85-4125-be66-e5823b2ab663">
+              <SHORT-NAME>PHMFrontR</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_HM_FRONTR/set_E_op</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ECU_Abstraction/CS_HM_FRONTR</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="79df1478-5e85-49a0-ae3c-280ff8e9d591">
+              <SHORT-NAME>PHMRearL</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_HM_REARL/set_E_op</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ECU_Abstraction/CS_HM_REARL</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="b6b20166-5c3f-4050-8727-f90686b31812">
+              <SHORT-NAME>PHMRearR</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_HM_REARR/set_E_op</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/ECU_Abstraction/CS_HM_REARR</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="c487903f-dc06-4964-8e7d-62a68b796832">
+              <SHORT-NAME>CS_MOTOR_Server</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MotorComposition/CS_MOTOR_ACT/motor_act_op</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MotorComposition/CS_MOTOR_ACT</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="b553d3b1-fee1-4049-93b8-c97b5517d600">
+              <SHORT-NAME>CS_BATT_Server</SHORT-NAME>
+              <PROVIDED-COM-SPECS>
+                <SERVER-COM-SPEC>
+                  <OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MotorComposition/CS_BATT_SEN/batt_sen_op</OPERATION-REF>
+                  <QUEUE-LENGTH>10</QUEUE-LENGTH>
+                </SERVER-COM-SPEC>
+              </PROVIDED-COM-SPECS>
+              <PROVIDED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/MotorComposition/CS_BATT_SEN</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="379bc25c-007c-42c9-b240-563f87b74e0a">
+              <SHORT-NAME>IB_ECU_ABS</SHORT-NAME>
+              <EVENTS>
+                <OPERATION-INVOKED-EVENT UUID="90da74cf-ff79-4218-ab3f-9d2b20633110">
+                  <SHORT-NAME>OperationInvokedEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_PTireRPM</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PTireRPM</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_Tire_RPM_Status/get_Tire_RPM</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="b7c6d6ce-e508-456f-b893-9d14e69e5dd5">
+                  <SHORT-NAME>OperationInvokedEvent_1</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_PBrakePedal</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PBrakePedal</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_BrakePedal_Status/get_BrakePedal_Status</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="7885600b-6426-4a3c-b73d-37b41d04e192">
+                  <SHORT-NAME>OperationInvokedEvent_2</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_PGearMode</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PGearMode</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_Gear_Mode_Status/get_Gear_Mode</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="34dde565-d6d3-4e23-939c-41d3842b2fcd">
+                  <SHORT-NAME>OperationInvokedEvent_3</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_PAccelPedal</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PAccelPedal</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_AccelPedal_Status/get_AccelPedal_Status</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="1bfa6657-4843-4ad9-89fe-d2f306a0bba2">
+                  <SHORT-NAME>OperationInvokedEvent_4</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_SeverGear</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/ActSGear</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Engine_Composition/CS_PhyGear/set_phygear</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="b358b2cf-507a-4d24-9d47-7ff41efb9c17">
+                  <SHORT-NAME>OperationInvokedEvent_5</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_PCylinder</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PCylinder</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Engine_Composition/CS_Cylinder_Status/get_cylinder_Status</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="472514f8-8340-41c3-a554-10ede9c3c654">
+                  <SHORT-NAME>OperationInvokedEvent_6</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_SeverEngine</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/ActSEngine</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Engine_Composition/CS_Engine/set_engine</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="7a2b9f38-d462-4dc9-a3e9-3cb539a088ec">
+                  <SHORT-NAME>OperationInvokedEvent_7</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_PHMRearR</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMRearR</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_HM_REARR/set_E_op</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="0cb08cff-0f7b-4193-a21e-ea4670bbc61a">
+                  <SHORT-NAME>OperationInvokedEvent_8</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_PHMRearL</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMRearL</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_HM_REARL/set_E_op</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="2f277e00-3065-4a14-aa7b-54c4f86a1c57">
+                  <SHORT-NAME>OperationInvokedEvent_9</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_PHMFrontR</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMFrontR</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_HM_FRONTR/set_E_op</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="8a5b426a-a550-4b14-af20-8c0da2600a78">
+                  <SHORT-NAME>OperationInvokedEvent_10</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_PHMFrontL</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/PHMFrontL</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/ECU_Abstraction/CS_HM_FRONTL/set_E_op</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="1d497005-80bd-4442-844c-cd7120dc80f0">
+                  <SHORT-NAME>OperationInvokedEvent_11</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_ECU_ABS_MOTOR</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/CS_MOTOR_Server</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MotorComposition/CS_MOTOR_ACT/motor_act_op</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+                <OPERATION-INVOKED-EVENT UUID="cb5ebdf9-546b-403c-a297-91db78e3e16d">
+                  <SHORT-NAME>OperationInvokedEvent_12</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/ECU_Abstraction/ECU_ABS/IB_ECU_ABS/RE_ECU_ABS_BATT</START-ON-EVENT-REF>
+                  <OPERATION-IREF>
+                    <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/ECU_Abstraction/ECU_ABS/CS_BATT_Server</CONTEXT-P-PORT-REF>
+                    <TARGET-PROVIDED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/MotorComposition/CS_BATT_SEN/batt_sen_op</TARGET-PROVIDED-OPERATION-REF>
+                  </OPERATION-IREF>
+                </OPERATION-INVOKED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="b0631497-9f59-44f3-9312-d65e541baeea">
+                  <SHORT-NAME>RE_PTireRPM</SHORT-NAME>
+                  <SYMBOL>RE_PTireRPM_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="fa8b259d-e564-484e-9654-075ada51e3ac">
+                  <SHORT-NAME>RE_PAccelPedal</SHORT-NAME>
+                  <SYMBOL>RE_PAccelPedal_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="a55f4acb-39bc-4e06-9c07-690174b2769e">
+                  <SHORT-NAME>RE_PBrakePedal</SHORT-NAME>
+                  <SYMBOL>RE_PBrakePedal_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="75f21b11-c3b9-4d75-b9b6-d1a376bfe52c">
+                  <SHORT-NAME>RE_PGearMode</SHORT-NAME>
+                  <SYMBOL>RE_PGearMode_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="a817e80f-f7a3-4043-a445-4f430af68d31">
+                  <SHORT-NAME>RE_SeverGear</SHORT-NAME>
+                  <SYMBOL>RE_SeverGear_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="c5d357da-9b92-48cb-bb84-97e17c17b130">
+                  <SHORT-NAME>RE_SeverEngine</SHORT-NAME>
+                  <SYMBOL>RE_SeverEngine_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="16eeeb41-d420-4dd8-b8e7-d4faa678dcd9">
+                  <SHORT-NAME>RE_PCylinder</SHORT-NAME>
+                  <SYMBOL>RE_PCylinder_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="afd67d0f-2806-436e-8102-b334f435e96b">
+                  <SHORT-NAME>RE_PHMFrontL</SHORT-NAME>
+                  <SYMBOL>RE_PHMFrontL_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="6990df46-a8a9-4614-b468-a97f048d87e4">
+                  <SHORT-NAME>RE_PHMFrontR</SHORT-NAME>
+                  <SYMBOL>RE_PHMFrontR_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="6464e80d-148b-490a-9c28-839ef2bcd677">
+                  <SHORT-NAME>RE_PHMRearL</SHORT-NAME>
+                  <SYMBOL>RE_PHMRearL_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="321f1494-5caa-4e66-8b49-2b1cd7b74d12">
+                  <SHORT-NAME>RE_PHMRearR</SHORT-NAME>
+                  <SYMBOL>RE_PHMRearR_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="a25d04cf-125f-4f51-a43e-6d85bfeb2f0a">
+                  <SHORT-NAME>RE_ECU_ABS_MOTOR</SHORT-NAME>
+                  <SYMBOL>RE_ECU_ABS_MOTOR_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="e07889f9-7f49-4425-9304-fd693ca9ec59">
+                  <SHORT-NAME>RE_ECU_ABS_BATT</SHORT-NAME>
+                  <SYMBOL>RE_ECU_ABS_BATT_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </ECU-ABSTRACTION-SW-COMPONENT-TYPE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_HM_FRONTL</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>set_E_op</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>volt</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+                  <DIRECTION>IN</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_HM_FRONTR</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>set_E_op</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>volt</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+                  <DIRECTION>IN</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_HM_REARL</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>set_E_op</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>volt</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+                  <DIRECTION>IN</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_HM_REARR</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>set_E_op</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>volt</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+                  <DIRECTION>IN</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

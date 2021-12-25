@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-3.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>Engine_Composition</SHORT-NAME>
+      <ELEMENTS>
+        <APPLICATION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>EngineApp</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="27511fc4-2f4d-4a2a-9488-0bddcba4c568">
+              <SHORT-NAME>Power_Rport</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Engine_Composition/SR_EnginePower</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="0ee32e60-b148-4ca8-a6ad-edbb2867631f">
+              <SHORT-NAME>Cylinder_Rport</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Engine_Composition/SR_Cylin_AppValue</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="8c5e6525-a87f-4b10-9347-195858148c3c">
+              <SHORT-NAME>CycleData_Pport</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Engine_Composition/SR_cylinderActInfo</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="13a3b3ee-5ff0-425a-afb1-239d13e1b0c4">
+              <SHORT-NAME>PhyGear_Pport</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="TRIGGER-INTERFACE">/Engine_Composition/Tirg_PhyGearLevel_ActInfo</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="7335de8a-9905-461f-baec-ca23255f1c16">
+              <SHORT-NAME>IB_EngineApp</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="fd513972-5ec5-4f74-8aa6-7837f1104caa">
+                  <SHORT-NAME>TimingEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Engine_Composition/EngineApp/IB_EngineApp/RE_EngineApp</START-ON-EVENT-REF>
+                  <PERIOD>0.4</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="70f137ed-1524-4d93-a2b1-c80d9bb32ec7">
+                  <SHORT-NAME>RE_EngineApp</SHORT-NAME>
+                  <DATA-RECEIVE-POINT-BY-VALUES>
+                    <VARIABLE-ACCESS UUID="9977258e-7e1e-48b8-8cb5-448c9ec12198">
+                      <SHORT-NAME>DRPV_powerValue_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/EngineApp/Power_Rport</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_EnginePower/powerValue</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="94533113-2289-4d23-b5ed-7e8fc05b83c2">
+                      <SHORT-NAME>DRPV_pressure_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/EngineApp/Cylinder_Rport</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_Cylin_AppValue/pressure</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="f2289ff2-02bb-463c-b44d-0a6f613218cf">
+                      <SHORT-NAME>DRPV_temperature_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/EngineApp/Cylinder_Rport</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_Cylin_AppValue/temperature</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-RECEIVE-POINT-BY-VALUES>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="e746a0dc-5893-4ae9-87c6-6d7932c5c0ce">
+                      <SHORT-NAME>DSP_infoArray_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/EngineApp/CycleData_Pport</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_cylinderActInfo/infoArray</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <EXTERNAL-TRIGGERING-POINTS>
+                    <EXTERNAL-TRIGGERING-POINT>
+                      <TRIGGER-IREF>
+                        <P-TRIGGER-IN-ATOMIC-SWC-TYPE-INSTANCE-REF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/EngineApp/PhyGear_Pport</CONTEXT-P-PORT-REF>
+                          <TARGET-TRIGGER-REF DEST="TRIGGER">/Engine_Composition/Tirg_PhyGearLevel_ActInfo/level1</TARGET-TRIGGER-REF>
+                        </P-TRIGGER-IN-ATOMIC-SWC-TYPE-INSTANCE-REF>
+                      </TRIGGER-IREF>
+                    </EXTERNAL-TRIGGERING-POINT>
+                    <EXTERNAL-TRIGGERING-POINT>
+                      <TRIGGER-IREF>
+                        <P-TRIGGER-IN-ATOMIC-SWC-TYPE-INSTANCE-REF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/EngineApp/PhyGear_Pport</CONTEXT-P-PORT-REF>
+                          <TARGET-TRIGGER-REF DEST="TRIGGER">/Engine_Composition/Tirg_PhyGearLevel_ActInfo/level2</TARGET-TRIGGER-REF>
+                        </P-TRIGGER-IN-ATOMIC-SWC-TYPE-INSTANCE-REF>
+                      </TRIGGER-IREF>
+                    </EXTERNAL-TRIGGERING-POINT>
+                    <EXTERNAL-TRIGGERING-POINT>
+                      <TRIGGER-IREF>
+                        <P-TRIGGER-IN-ATOMIC-SWC-TYPE-INSTANCE-REF>
+                          <CONTEXT-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/EngineApp/PhyGear_Pport</CONTEXT-P-PORT-REF>
+                          <TARGET-TRIGGER-REF DEST="TRIGGER">/Engine_Composition/Tirg_PhyGearLevel_ActInfo/level3</TARGET-TRIGGER-REF>
+                        </P-TRIGGER-IN-ATOMIC-SWC-TYPE-INSTANCE-REF>
+                      </TRIGGER-IREF>
+                    </EXTERNAL-TRIGGERING-POINT>
+                  </EXTERNAL-TRIGGERING-POINTS>
+                  <SYMBOL>RE_EngineApp_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </APPLICATION-SW-COMPONENT-TYPE>
+        <SENDER-RECEIVER-INTERFACE>
+          <SHORT-NAME>SR_EnginePower</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE>
+              <SHORT-NAME>powerValue</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENDER-RECEIVER-INTERFACE>
+          <SHORT-NAME>SR_Cylin_AppValue</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE>
+              <SHORT-NAME>pressure</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/float32</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+            <VARIABLE-DATA-PROTOTYPE>
+              <SHORT-NAME>temperature</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/float32</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+          <SHORT-NAME>Engine_Gear_ACT</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="45f975b2-d917-435b-b41a-8ee8a318f39e">
+              <SHORT-NAME>phyGear_Rport</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="TRIGGER-INTERFACE">/Engine_Composition/Tirg_PhyGearLevel_ActInfo</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE UUID="cbbbb41e-103d-4a70-9fe7-18f8a5e02167">
+              <SHORT-NAME>phyGear_relayPport</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Engine_Composition/CS_PhyGear</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="bc52a4ce-e709-44e8-83ab-8f4951b68e8e">
+              <SHORT-NAME>IB_Engine_Gear_ACT</SHORT-NAME>
+              <EVENTS>
+                <EXTERNAL-TRIGGER-OCCURRED-EVENT UUID="94494965-b271-4b35-bdc5-e06f52b57247">
+                  <SHORT-NAME>ExternalTriggerOccurredEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Engine_Composition/Engine_Gear_ACT/IB_Engine_Gear_ACT/RE_EG_level1_ACT</START-ON-EVENT-REF>
+                  <TRIGGER-IREF>
+                    <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Gear_ACT/phyGear_Rport</CONTEXT-R-PORT-REF>
+                    <TARGET-TRIGGER-REF DEST="TRIGGER">/Engine_Composition/Tirg_PhyGearLevel_ActInfo/level1</TARGET-TRIGGER-REF>
+                  </TRIGGER-IREF>
+                </EXTERNAL-TRIGGER-OCCURRED-EVENT>
+                <EXTERNAL-TRIGGER-OCCURRED-EVENT UUID="c00ac287-972f-4063-9560-c188c8fa7fdf">
+                  <SHORT-NAME>ExternalTriggerOccurredEvent_1</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Engine_Composition/Engine_Gear_ACT/IB_Engine_Gear_ACT/RE_EG_level2_ACT</START-ON-EVENT-REF>
+                  <TRIGGER-IREF>
+                    <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Gear_ACT/phyGear_Rport</CONTEXT-R-PORT-REF>
+                    <TARGET-TRIGGER-REF DEST="TRIGGER">/Engine_Composition/Tirg_PhyGearLevel_ActInfo/level2</TARGET-TRIGGER-REF>
+                  </TRIGGER-IREF>
+                </EXTERNAL-TRIGGER-OCCURRED-EVENT>
+                <EXTERNAL-TRIGGER-OCCURRED-EVENT UUID="bcd10ddd-b476-4875-ade9-6b7eaa70bd3c">
+                  <SHORT-NAME>ExternalTriggerOccurredEvent_2</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Engine_Composition/Engine_Gear_ACT/IB_Engine_Gear_ACT/RE_EG_level3_ACT</START-ON-EVENT-REF>
+                  <TRIGGER-IREF>
+                    <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Gear_ACT/phyGear_Rport</CONTEXT-R-PORT-REF>
+                    <TARGET-TRIGGER-REF DEST="TRIGGER">/Engine_Composition/Tirg_PhyGearLevel_ActInfo/level3</TARGET-TRIGGER-REF>
+                  </TRIGGER-IREF>
+                </EXTERNAL-TRIGGER-OCCURRED-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="0d0bed11-edc0-4772-b315-13f3911834e0">
+                  <SHORT-NAME>RE_EG_level1_ACT</SHORT-NAME>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="1e9c7509-44d0-4c33-be5f-58937a59c59d">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Gear_ACT/phyGear_relayPport</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Engine_Composition/CS_PhyGear/set_phygear</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_EG_level1_ACT_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="896eafba-925e-40d2-8d20-91475c6d142e">
+                  <SHORT-NAME>RE_EG_level2_ACT</SHORT-NAME>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="2f91506e-c670-4a18-a0df-1a6db6ff78af">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Gear_ACT/phyGear_relayPport</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Engine_Composition/CS_PhyGear/set_phygear</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_EG_level2_ACT_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+                <RUNNABLE-ENTITY UUID="748062bb-d171-43e5-a52c-f1cdd343a570">
+                  <SHORT-NAME>RE_EG_level3_ACT</SHORT-NAME>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="c8593525-9dd0-4c07-a149-3edf62ec21af">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Gear_ACT/phyGear_relayPport</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Engine_Composition/CS_PhyGear/set_phygear</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RE_EG_level3_ACT_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+        <COMPOSITION-SW-COMPONENT-TYPE>
+          <SHORT-NAME>Engine_Composition</SHORT-NAME>
+          <PORTS>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>Power_Rport</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Engine_Composition/SR_EnginePower</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>Engine_Cleintport</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Engine_Composition/CS_Engine</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>phyGear_relayPport_0</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Engine_Composition/CS_PhyGear</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <R-PORT-PROTOTYPE>
+              <SHORT-NAME>Rport</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Engine_Composition/CS_Cylinder_Status</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+          </PORTS>
+          <COMPONENTS>
+            <SW-COMPONENT-PROTOTYPE UUID="477db7cd-9471-4403-a7d6-6fb8e6a55fcf">
+              <SHORT-NAME>CPT_Engine_Cycle_ACT</SHORT-NAME>
+              <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Engine_Composition/ARPackage_1/Engine_Cycle_ACT</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="662299d2-36c9-40a5-8323-ff06717a947c">
+              <SHORT-NAME>CPT_Engine_Gear_ACT</SHORT-NAME>
+              <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Engine_Composition/Engine_Gear_ACT</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="c78e9c0f-8c3a-44c5-8369-a84550dc1950">
+              <SHORT-NAME>CPT_EngineApp</SHORT-NAME>
+              <TYPE-TREF DEST="APPLICATION-SW-COMPONENT-TYPE">/Engine_Composition/EngineApp</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+            <SW-COMPONENT-PROTOTYPE UUID="a155ca07-83e1-4c7a-a73f-b5feddbc32df">
+              <SHORT-NAME>CPT_Cylinder_Sen</SHORT-NAME>
+              <TYPE-TREF DEST="SENSOR-ACTUATOR-SW-COMPONENT-TYPE">/Engine_Composition/Cylinder_Sen</TYPE-TREF>
+            </SW-COMPONENT-PROTOTYPE>
+          </COMPONENTS>
+          <CONNECTORS>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>DSC_CPT_EngineApp_Power_Rport_Power_Rport</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_EngineApp</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/EngineApp/Power_Rport</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Composition/Power_Rport</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_EngineApp_CycleData_Pport_CPT_Engine_Cycle_ACT_CycleData_Rport</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_EngineApp</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/EngineApp/CycleData_Pport</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_Engine_Cycle_ACT</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/ARPackage_1/Engine_Cycle_ACT/CycleData_Rport</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_EngineApp_PhyGear_Pport_CPT_Engine_Gear_ACT_phyGear_Rport</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_EngineApp</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/EngineApp/PhyGear_Pport</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_Engine_Gear_ACT</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Gear_ACT/phyGear_Rport</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>DSC_CPT_Engine_Cycle_ACT_Engine_Cleintport_Engine_Cleintport</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_Engine_Cycle_ACT</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/ARPackage_1/Engine_Cycle_ACT/Engine_Cleintport</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Composition/Engine_Cleintport</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>DSC_CPT_Engine_Gear_ACT_phyGear_relayPport_phyGear_relayPport_0</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_Engine_Gear_ACT</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Gear_ACT/phyGear_relayPport</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Composition/phyGear_relayPport_0</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+            <ASSEMBLY-SW-CONNECTOR>
+              <SHORT-NAME>ASC_CPT_Cylinder_Sen_Pport_CPT_EngineApp_Cylinder_Rport</SHORT-NAME>
+              <PROVIDER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_Cylinder_Sen</CONTEXT-COMPONENT-REF>
+                <TARGET-P-PORT-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/Cylinder_Sen/Pport</TARGET-P-PORT-REF>
+              </PROVIDER-IREF>
+              <REQUESTER-IREF>
+                <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_EngineApp</CONTEXT-COMPONENT-REF>
+                <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/EngineApp/Cylinder_Rport</TARGET-R-PORT-REF>
+              </REQUESTER-IREF>
+            </ASSEMBLY-SW-CONNECTOR>
+            <DELEGATION-SW-CONNECTOR>
+              <SHORT-NAME>DSC_CPT_Cylinder_Sen_Rport_Rport</SHORT-NAME>
+              <INNER-PORT-IREF>
+                <R-PORT-IN-COMPOSITION-INSTANCE-REF>
+                  <CONTEXT-COMPONENT-REF DEST="SW-COMPONENT-PROTOTYPE">/Engine_Composition/Engine_Composition/CPT_Cylinder_Sen</CONTEXT-COMPONENT-REF>
+                  <TARGET-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Cylinder_Sen/Rport</TARGET-R-PORT-REF>
+                </R-PORT-IN-COMPOSITION-INSTANCE-REF>
+              </INNER-PORT-IREF>
+              <OUTER-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Engine_Composition/Rport</OUTER-PORT-REF>
+            </DELEGATION-SW-CONNECTOR>
+          </CONNECTORS>
+        </COMPOSITION-SW-COMPONENT-TYPE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_PhyGear</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>set_phygear</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>gear_value</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint8</TYPE-TREF>
+                  <DIRECTION>IN</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_Engine</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>set_engine</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>is_on</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint8</TYPE-TREF>
+                  <DIRECTION>IN</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>ignite</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/boolean</TYPE-TREF>
+                  <DIRECTION>IN</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>fuel_input</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint8</TYPE-TREF>
+                  <DIRECTION>IN</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+        <IMPLEMENTATION-DATA-TYPE>
+          <SHORT-NAME>arr_sint8</SHORT-NAME>
+          <CATEGORY>ARRAY</CATEGORY>
+          <SUB-ELEMENTS>
+            <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+              <SHORT-NAME>ImplementationDataTypeElement_0</SHORT-NAME>
+              <CATEGORY>TYPE_REFERENCE</CATEGORY>
+              <ARRAY-SIZE>5</ARRAY-SIZE>
+              <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+              <SW-DATA-DEF-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint8</IMPLEMENTATION-DATA-TYPE-REF>
+                    <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </SW-DATA-DEF-PROPS>
+            </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+          </SUB-ELEMENTS>
+        </IMPLEMENTATION-DATA-TYPE>
+        <SENDER-RECEIVER-INTERFACE>
+          <SHORT-NAME>SR_cylinderActInfo</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <DATA-ELEMENTS>
+            <VARIABLE-DATA-PROTOTYPE>
+              <SHORT-NAME>infoArray</SHORT-NAME>
+              <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/Engine_Composition/arr_sint8</TYPE-TREF>
+            </VARIABLE-DATA-PROTOTYPE>
+          </DATA-ELEMENTS>
+        </SENDER-RECEIVER-INTERFACE>
+        <TRIGGER-INTERFACE>
+          <SHORT-NAME>Tirg_PhyGearLevel_ActInfo</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <TRIGGERS>
+            <TRIGGER>
+              <SHORT-NAME>level1</SHORT-NAME>
+              <TRIGGER-PERIOD />
+            </TRIGGER>
+            <TRIGGER>
+              <SHORT-NAME>level2</SHORT-NAME>
+              <TRIGGER-PERIOD />
+            </TRIGGER>
+            <TRIGGER>
+              <SHORT-NAME>level3</SHORT-NAME>
+              <TRIGGER-PERIOD />
+            </TRIGGER>
+          </TRIGGERS>
+        </TRIGGER-INTERFACE>
+        <SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+          <SHORT-NAME>Cylinder_Sen</SHORT-NAME>
+          <ADMIN-DATA>
+            <SDGS>
+              <SDG GID="Master">
+                <SD>true</SD>
+              </SDG>
+            </SDGS>
+          </ADMIN-DATA>
+          <PORTS>
+            <R-PORT-PROTOTYPE UUID="7dcee48f-f525-41b8-8b8a-be348f55ef76">
+              <SHORT-NAME>Rport</SHORT-NAME>
+              <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Engine_Composition/CS_Cylinder_Status</REQUIRED-INTERFACE-TREF>
+            </R-PORT-PROTOTYPE>
+            <P-PORT-PROTOTYPE UUID="a06496d7-34b1-4039-aa36-cc902620778a">
+              <SHORT-NAME>Pport</SHORT-NAME>
+              <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Engine_Composition/SR_Cylin_AppValue</PROVIDED-INTERFACE-TREF>
+            </P-PORT-PROTOTYPE>
+          </PORTS>
+          <INTERNAL-BEHAVIORS>
+            <SWC-INTERNAL-BEHAVIOR UUID="4d27cc91-2ddd-45a9-ada6-cafb51a9ffe6">
+              <SHORT-NAME>IB_Cylinder_Sen</SHORT-NAME>
+              <EVENTS>
+                <TIMING-EVENT UUID="34126fc5-b3b7-4b8a-9c8e-19ec9b2a20e8">
+                  <SHORT-NAME>TimingEvent_0</SHORT-NAME>
+                  <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Engine_Composition/Cylinder_Sen/IB_Cylinder_Sen/RE_Cylinder_Sen</START-ON-EVENT-REF>
+                  <PERIOD>0.3</PERIOD>
+                </TIMING-EVENT>
+              </EVENTS>
+              <RUNNABLES>
+                <RUNNABLE-ENTITY UUID="f26afcc0-6ec2-4e01-a5b0-d242e397b272">
+                  <SHORT-NAME>RE_Cylinder_Sen</SHORT-NAME>
+                  <DATA-SEND-POINTS>
+                    <VARIABLE-ACCESS UUID="d0ce8f19-16eb-48ae-94fb-6e90f3c67196">
+                      <SHORT-NAME>DSP_pressure_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/Cylinder_Sen/Pport</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_Cylin_AppValue/pressure</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                    <VARIABLE-ACCESS UUID="a48aaeca-c370-44a3-99a5-31e3e31f6b09">
+                      <SHORT-NAME>DSP_temperature_0</SHORT-NAME>
+                      <ACCESSED-VARIABLE>
+                        <AUTOSAR-VARIABLE-IREF>
+                          <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/Engine_Composition/Cylinder_Sen/Pport</PORT-PROTOTYPE-REF>
+                          <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_Cylin_AppValue/temperature</TARGET-DATA-PROTOTYPE-REF>
+                        </AUTOSAR-VARIABLE-IREF>
+                      </ACCESSED-VARIABLE>
+                    </VARIABLE-ACCESS>
+                  </DATA-SEND-POINTS>
+                  <SERVER-CALL-POINTS>
+                    <SYNCHRONOUS-SERVER-CALL-POINT UUID="b6b506c9-9d42-42fb-9dbc-28616ae6a73b">
+                      <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                      <OPERATION-IREF>
+                        <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/Cylinder_Sen/Rport</CONTEXT-R-PORT-REF>
+                        <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Engine_Composition/CS_Cylinder_Status/get_cylinder_Status</TARGET-REQUIRED-OPERATION-REF>
+                      </OPERATION-IREF>
+                    </SYNCHRONOUS-SERVER-CALL-POINT>
+                  </SERVER-CALL-POINTS>
+                  <SYMBOL>RunnableEntity_0_func</SYMBOL>
+                </RUNNABLE-ENTITY>
+              </RUNNABLES>
+              <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+            </SWC-INTERNAL-BEHAVIOR>
+          </INTERNAL-BEHAVIORS>
+        </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+        <CLIENT-SERVER-INTERFACE>
+          <SHORT-NAME>CS_Cylinder_Status</SHORT-NAME>
+          <IS-SERVICE>false</IS-SERVICE>
+          <OPERATIONS>
+            <CLIENT-SERVER-OPERATION>
+              <SHORT-NAME>get_cylinder_Status</SHORT-NAME>
+              <ARGUMENTS>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>temperature</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+                <ARGUMENT-DATA-PROTOTYPE>
+                  <SHORT-NAME>pressure</SHORT-NAME>
+                  <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_PlatformTypes/ImplementationDataTypes/sint16</TYPE-TREF>
+                  <DIRECTION>OUT</DIRECTION>
+                  <SERVER-ARGUMENT-IMPL-POLICY>USE-ARGUMENT-TYPE</SERVER-ARGUMENT-IMPL-POLICY>
+                </ARGUMENT-DATA-PROTOTYPE>
+              </ARGUMENTS>
+            </CLIENT-SERVER-OPERATION>
+          </OPERATIONS>
+        </CLIENT-SERVER-INTERFACE>
+      </ELEMENTS>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+          <SHORT-NAME>ARPackage_1</SHORT-NAME>
+          <ELEMENTS>
+            <SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+              <SHORT-NAME>Engine_Cycle_ACT</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG GID="Master">
+                    <SD>true</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <PORTS>
+                <R-PORT-PROTOTYPE UUID="7fb79af8-d513-423c-985b-c8e9f57e8b09">
+                  <SHORT-NAME>CycleData_Rport</SHORT-NAME>
+                  <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/Engine_Composition/SR_cylinderActInfo</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+                <R-PORT-PROTOTYPE UUID="6e08e89f-d590-4145-85ad-942f7cbdee95">
+                  <SHORT-NAME>Engine_Cleintport</SHORT-NAME>
+                  <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/Engine_Composition/CS_Engine</REQUIRED-INTERFACE-TREF>
+                </R-PORT-PROTOTYPE>
+              </PORTS>
+              <INTERNAL-BEHAVIORS>
+                <SWC-INTERNAL-BEHAVIOR UUID="e2832063-95e1-4b77-995d-ec46b19a2112">
+                  <SHORT-NAME>IB_Engine_Cycle_ACT</SHORT-NAME>
+                  <EVENTS>
+                    <TIMING-EVENT UUID="b979af5c-f7ea-49e3-b99c-0e2ed23fd9c8">
+                      <SHORT-NAME>TimingEvent_0</SHORT-NAME>
+                      <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/Engine_Composition/ARPackage_1/Engine_Cycle_ACT/IB_Engine_Cycle_ACT/RE_Engine_Cycle_ACT</START-ON-EVENT-REF>
+                      <PERIOD>0.3</PERIOD>
+                    </TIMING-EVENT>
+                  </EVENTS>
+                  <RUNNABLES>
+                    <RUNNABLE-ENTITY UUID="dbb97d00-7bcf-4345-907a-a1617b089e53">
+                      <SHORT-NAME>RE_Engine_Cycle_ACT</SHORT-NAME>
+                      <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                        <VARIABLE-ACCESS UUID="5872ed79-f5f6-4453-80cc-e2533152cae3">
+                          <SHORT-NAME>DRPA_infoArray_0</SHORT-NAME>
+                          <ACCESSED-VARIABLE>
+                            <AUTOSAR-VARIABLE-IREF>
+                              <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/ARPackage_1/Engine_Cycle_ACT/CycleData_Rport</PORT-PROTOTYPE-REF>
+                              <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/Engine_Composition/SR_cylinderActInfo/infoArray</TARGET-DATA-PROTOTYPE-REF>
+                            </AUTOSAR-VARIABLE-IREF>
+                          </ACCESSED-VARIABLE>
+                        </VARIABLE-ACCESS>
+                      </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                      <SERVER-CALL-POINTS>
+                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="cf4e21d2-c43a-44c2-af0c-d34450927b14">
+                          <SHORT-NAME>SynchronousServerCallPoint_0</SHORT-NAME>
+                          <OPERATION-IREF>
+                            <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/Engine_Composition/ARPackage_1/Engine_Cycle_ACT/Engine_Cleintport</CONTEXT-R-PORT-REF>
+                            <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/Engine_Composition/CS_Engine/set_engine</TARGET-REQUIRED-OPERATION-REF>
+                          </OPERATION-IREF>
+                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                      </SERVER-CALL-POINTS>
+                      <SYMBOL>RE_Engine_Cycle_ACT_func</SYMBOL>
+                    </RUNNABLE-ENTITY>
+                  </RUNNABLES>
+                  <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                </SWC-INTERNAL-BEHAVIOR>
+              </INTERNAL-BEHAVIORS>
+            </SENSOR-ACTUATOR-SW-COMPONENT-TYPE>
+          </ELEMENTS>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+

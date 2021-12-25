@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.etas.vaptools.rtarte.generator.core.LaunchConfigurationType">
+<stringAttribute key="VECU_NAME" value="Fproject2_5"/>
+<stringAttribute key="additional_command" value="--strict-initial-values-check=warn --append-name-to-buffer=1 --samples=swc"/>
+<listAttribute key="arxml_files">
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/ISOLAR_PlatformTypes_Old.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/ARPackage_0.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/Toplevelbrakecomposition.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/Actuators.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/Engine_Composition.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/ARPackage_1.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/EcuInstance_0_FlatMap.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/MotorComposition.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/Application.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/VRSYS.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/MDG_INFO.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/ECU_Abstraction.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/Sensors.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/EcuInstance_0_FlatView_SWCD.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/AComp.arxml}"/>
+<listEntry value="${workspace_loc:/Fproject2_5/arxml/Components/Vrsys_EcuExtr.arxml}"/>
+</listAttribute>
+<stringAttribute key="ecu_arxml_path" value="platform:/resource/Fproject2_5/arxml/Components/VRSYS.arxml"/>
+<stringAttribute key="ecu_instances" value="/VRSYS/EcuInstance_0"/>
+<stringAttribute key="output_loc" value="${workspace_loc:/Fproject2_5MinGW/RTE}"/>
+</launchConfiguration>

@@ -1,0 +1,5 @@
+-m32 -g "-IC:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/VECUs/MinGW/Obj" -c
+"-IC:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/EVEsrc"
+"-IC:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS"
+"-IC:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTE"
+"C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/virtualdevices.cpp"

@@ -1,0 +1,15 @@
+--target:[MinGW]VRTA
+-o[*.h]C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS
+-o[*.c]C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS
+-o[*.hpp]C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS
+-o[*.cpp]C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS
+-o[*.rta]C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS
+-oC:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/VECUs/MinGW/Obj
+-I.
+-IC:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/EVEsrc
+-IC:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTE
+-IC:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS
+-IC:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/VECUs/MinGW/Obj/Samples/Includes
+--samples:[Includes]overwrite
+--target_option:Run-time license name=ISOLAR_EVE||ISOLAR_EVE_RUNTIME
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTAOS/Fproject2_5.rtaos

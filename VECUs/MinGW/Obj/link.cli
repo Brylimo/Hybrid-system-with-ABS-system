@@ -1,0 +1,1 @@
+-Wl,-Map -Wl,Fproject2_5.map -Wl,--allow-multiple-definition -o Fproject2_5.exe RTAOS.lib -lwinmm -lws2_32 -static-libstdc++ -static-libgcc

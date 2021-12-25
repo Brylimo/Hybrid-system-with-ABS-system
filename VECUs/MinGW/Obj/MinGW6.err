@@ -1,0 +1,4 @@
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTE/Rte_APP_MOTOR_COMP.c: In function 'RE_APP_MOTOR_batt_pwm_func':
+C:/ETASData/ISOLAR-EVE3.5.0/workspace/Fproject2_5/src/gen/MinGW/RTE/Rte_APP_MOTOR_COMP.c:28:2: warning: implicit declaration of function 'status_printf' [-Wimplicit-function-declaration]
+  status_printf("batt received : %d\r\n", batt_stat);
+  ^~~~~~~~~~~~~

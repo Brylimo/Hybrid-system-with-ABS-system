@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-0-2.xsd">
+   <!-- McSupportData report file from RTA-RTE v5.10.0  -->
+   <AR-PACKAGES>
+      <AR-PACKAGE>
+         <SHORT-NAME>AUTOSAR_Rte</SHORT-NAME>
+         <REFERENCE-BASES>
+            <!-- Note: ReferenceBases must be unique in a package according to
+                 constr_2509 in AUTOSAR_TPS_GenericStructureTemplate so these
+                 must have different shortLabels to their counterparts in the
+                 BSWMD.
+            -->
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_ApplicationPrimitiveDataTypes</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/ApplicationPrimitiveDataTypes</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_BswImplementations</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/BswImplementations</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <!-- Note: This is package will actually be filled in the BSWMD -->
+               <SHORT-LABEL>Rte_MCSD_BswModuleDescriptions</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/BswModuleDescriptions</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_CompuMethods</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/CompuMethods</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_DataConstrs</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/DataConstrs</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_ImplementationDataTypes</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/ImplementationDataTypes</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_PhysicalDimensions</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/PhysicalDimensions</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_SwAddrMethods</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/SwAddrMethods</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_SwBaseTypes</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/SwBaseTypes</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_SwRecordLayouts</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/SwRecordLayouts</PACKAGE-REF>
+            </REFERENCE-BASE>
+            <REFERENCE-BASE>
+               <SHORT-LABEL>Rte_MCSD_Units</SHORT-LABEL>
+               <PACKAGE-REF DEST="AR-PACKAGE">/AUTOSAR_Rte/Units</PACKAGE-REF>
+            </REFERENCE-BASE>
+         </REFERENCE-BASES>
+         <AR-PACKAGES>
+            <AR-PACKAGE>
+               <SHORT-NAME>BswModuleDescriptions</SHORT-NAME>
+               <ELEMENTS>
+                  <!-- This package will actually be filled in the BSWMD -->
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>BswImplementations</SHORT-NAME>
+               <ELEMENTS>
+                  <BSW-IMPLEMENTATION>
+                     <!-- The name (and indeed path) of this BswImplementation
+                          must match that of the BswImplementation generated
+                          into the BSWMD report -->
+                     <SHORT-NAME>Rte</SHORT-NAME>
+                     <MC-SUPPORT>
+                        <EMULATION-SUPPORTS>
+                           <!--Emulation support common to all components on the ECU-->
+                           <MC-SW-EMULATION-METHOD-SUPPORT>
+                             <CATEGORY>NONE</CATEGORY>
+                           </MC-SW-EMULATION-METHOD-SUPPORT>
+                        </EMULATION-SUPPORTS>
+                        <MC-PARAMETER-INSTANCES>
+                           <!--Data instances common to all components on the ECU-->
+                           <!--Data instances for Application Software Component Type /AComp/AccelControlAPP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP-->
+                           <!--Data instances for Application Software Component Type /AComp/AvgSpeed-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed-->
+                           <!--Data instances for Application Software Component Type /Actuators/ACT_HYDRAULIC_MODULATOR_FRONTL_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP-->
+                           <!--Data instances for Application Software Component Type /Actuators/ACT_HYDRAULIC_MODULATOR_FRONTR_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP-->
+                           <!--Data instances for Application Software Component Type /Actuators/ACT_HYDRAULIC_MODULATOR_REARL_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP-->
+                           <!--Data instances for Application Software Component Type /Actuators/ACT_HYDRAULIC_MODULATOR_REARR_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP-->
+                           <!--Data instances for Application Software Component Type /Application/APP_BRAKE_CONTROLL_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP-->
+                           <!--Data instances for Application Software Component Type /ECU_Abstraction/ECU_ABS-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS-->
+                           <!--Data instances for Application Software Component Type /Engine_Composition/ARPackage_1/Engine_Cycle_ACT-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Cycle_ACT-->
+                           <!--Data instances for Application Software Component Type /Engine_Composition/Cylinder_Sen-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Cylinder_Sen-->
+                           <!--Data instances for Application Software Component Type /Engine_Composition/EngineApp-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp-->
+                           <!--Data instances for Application Software Component Type /Engine_Composition/Engine_Gear_ACT-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Gear_ACT-->
+                           <!--Data instances for Application Software Component Type /MotorComposition/ACT_MOTOR_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_MOTOR_COMP-->
+                           <!--Data instances for Application Software Component Type /MotorComposition/APP_MOTOR_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP-->
+                           <!--Data instances for Application Software Component Type /MotorComposition/SEN_BATT_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SEN_BATT_COMP-->
+                           <!--Data instances for Application Software Component Type /Sensors/AccelPedalSen-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelPedalSen-->
+                           <!--Data instances for Application Software Component Type /Sensors/BrakePedalSen-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_BrakePedalSen-->
+                           <!--Data instances for Application Software Component Type /Sensors/GearModeSen-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_GearModeSen-->
+                           <!--Data instances for Application Software Component Type /Sensors/SpeedSen-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen-->
+                        </MC-PARAMETER-INSTANCES>
+                        <MC-VARIABLE-INSTANCES>
+                           <!--Data instances common to all components on the ECU-->
+                           <!--Data instances for Application Software Component Type /AComp/AccelControlAPP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Engine_Composition/SR_EnginePower/powerValue in port /AComp/AccelControlAPP/P_EnginePower on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /MotorComposition/SR_PWM/pwm_data in port /AComp/AccelControlAPP/P_PWM on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Accel_AppValue/accel_value in port /AComp/AccelControlAPP/R_Accel on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /AComp/SR_AvgSpeed/avg_speed_data in port /AComp/AccelControlAPP/R_AvgSpeed on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Brake_AppValue/brake_value in port /AComp/AccelControlAPP/R_Brake on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Gear_AppValue/gear_value in port /AComp/AccelControlAPP/R_Gear on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelControlAPP because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /AComp/AvgSpeed-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /AComp/SR_AvgSpeed/avg_speed_data in port /AComp/AvgSpeed/P_avg_speed on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Speeds_AppValue/backleft in port /AComp/AvgSpeed/R_4speeds on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Speeds_AppValue/backright in port /AComp/AvgSpeed/R_4speeds on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Speeds_AppValue/frontleft in port /AComp/AvgSpeed/R_4speeds on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Speeds_AppValue/frontright in port /AComp/AvgSpeed/R_4speeds on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AvgSpeed because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Actuators/ACT_HYDRAULIC_MODULATOR_FRONTL_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Actuators/SR_E_FL/modedata in port /Actuators/ACT_HYDRAULIC_MODULATOR_FRONTL_COMP/ACT_HM_FL_Recv on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTL_COMP because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Actuators/ACT_HYDRAULIC_MODULATOR_FRONTR_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Actuators/SR_E_FR/modedata in port /Actuators/ACT_HYDRAULIC_MODULATOR_FRONTR_COMP/ACT_HM_FR_Recv on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_FRONTR_COMP because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Actuators/ACT_HYDRAULIC_MODULATOR_REARL_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Actuators/SR_E_RL/modedata in port /Actuators/ACT_HYDRAULIC_MODULATOR_REARL_COMP/ACT_HM_RL_Recv on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARL_COMP because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Actuators/ACT_HYDRAULIC_MODULATOR_REARR_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Actuators/SR_E_RR/modedata in port /Actuators/ACT_HYDRAULIC_MODULATOR_REARR_COMP/ACT_HM_RR_Recv on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_HYDRAULIC_MODULATOR_REARR_COMP because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Application/APP_BRAKE_CONTROLL_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Application/SR_E_FL/modedata in port /Application/APP_BRAKE_CONTROLL_COMP/APP_FL_Mode_Send on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Application/SR_E_FR/modedata in port /Application/APP_BRAKE_CONTROLL_COMP/APP_FR_Mode_Send on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Application/SR_E_RL/modedata in port /Application/APP_BRAKE_CONTROLL_COMP/APP_RL_Mode_Send on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Application/SR_E_RR/modedata in port /Application/APP_BRAKE_CONTROLL_COMP/APP_RR_Mode_Send on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Application/SR_SPEED/backleft in port /Application/APP_BRAKE_CONTROLL_COMP/APP_Speed_Receive on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Application/SR_SPEED/backright in port /Application/APP_BRAKE_CONTROLL_COMP/APP_Speed_Receive on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Application/SR_SPEED/frontleft in port /Application/APP_BRAKE_CONTROLL_COMP/APP_Speed_Receive on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Application/SR_SPEED/frontright in port /Application/APP_BRAKE_CONTROLL_COMP/APP_Speed_Receive on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_BRAKE_CONTROLL_COMP because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /ECU_Abstraction/ECU_ABS-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ECU_ABS-->
+                           <!--Data instances for Application Software Component Type /Engine_Composition/ARPackage_1/Engine_Cycle_ACT-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Cycle_ACT-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Engine_Composition/SR_cylinderActInfo/infoArray in port /Engine_Composition/ARPackage_1/Engine_Cycle_ACT/CycleData_Rport on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Cycle_ACT because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Engine_Composition/Cylinder_Sen-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Cylinder_Sen-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Engine_Composition/SR_Cylin_AppValue/pressure in port /Engine_Composition/Cylinder_Sen/Pport on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Cylinder_Sen because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Engine_Composition/SR_Cylin_AppValue/temperature in port /Engine_Composition/Cylinder_Sen/Pport on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Cylinder_Sen because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Engine_Composition/EngineApp-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Engine_Composition/SR_cylinderActInfo/infoArray in port /Engine_Composition/EngineApp/CycleData_Pport on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Engine_Composition/SR_Cylin_AppValue/pressure in port /Engine_Composition/EngineApp/Cylinder_Rport on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Engine_Composition/SR_Cylin_AppValue/temperature in port /Engine_Composition/EngineApp/Cylinder_Rport on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Engine_Composition/SR_EnginePower/powerValue in port /Engine_Composition/EngineApp/Power_Rport on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_EngineApp because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Engine_Composition/Engine_Gear_ACT-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_Engine_Gear_ACT-->
+                           <!--Data instances for Application Software Component Type /MotorComposition/ACT_MOTOR_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_MOTOR_COMP-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /MotorComposition/SR_MOTOR_SPEED/motor_speed_data in port /MotorComposition/ACT_MOTOR_COMP/SR_MOTOR_SPEED_Recv on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_ACT_MOTOR_COMP because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /MotorComposition/APP_MOTOR_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /MotorComposition/SR_BATT/batt_data in port /MotorComposition/APP_MOTOR_COMP/SR_BATT_Recv on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /MotorComposition/SR_MOTOR_SPEED/motor_speed_data in port /MotorComposition/APP_MOTOR_COMP/SR_MOTOR_SPEED_Send on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /MotorComposition/SR_PWM/pwm_data in port /MotorComposition/APP_MOTOR_COMP/SR_PWM_Recv on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_APP_MOTOR_COMP because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /MotorComposition/SEN_BATT_COMP-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SEN_BATT_COMP-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /MotorComposition/SR_BATT/batt_data in port /MotorComposition/SEN_BATT_COMP/SR_BATT_Send on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SEN_BATT_COMP because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Sensors/AccelPedalSen-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelPedalSen-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Accel_AppValue/accel_value in port /Sensors/AccelPedalSen/toApp_PPort on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_AccelPedalSen because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Sensors/BrakePedalSen-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_BrakePedalSen-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Brake_AppValue/brake_value in port /Sensors/BrakePedalSen/toApp_PPort on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_BrakePedalSen because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Sensors/GearModeSen-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_GearModeSen-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Gear_AppValue/gear_value in port /Sensors/GearModeSen/toApp_PPort on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_GearModeSen because the data prototype is not marked as measurable-->
+                           <!--Data instances for Application Software Component Type /Sensors/SpeedSen-->
+                           <!--Data instances for Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Speeds_AppValue/backleft in port /Sensors/SpeedSen/toApp_PPort on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Speeds_AppValue/backright in port /Sensors/SpeedSen/toApp_PPort on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Speeds_AppValue/frontleft in port /Sensors/SpeedSen/toApp_PPort on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen because the data prototype is not marked as measurable-->
+                           <!--No McDataInstance for Sender-Receiver DataItem /Sensors/SR_Speeds_AppValue/frontright in port /Sensors/SpeedSen/toApp_PPort on Application Software Component Instance /EcuInstance_0_FlatView/SwComponentTypes/EcuInstance_0_FlatView/CPT_SpeedSen because the data prototype is not marked as measurable-->
+                        </MC-VARIABLE-INSTANCES>
+                     </MC-SUPPORT>
+                  </BSW-IMPLEMENTATION>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>ApplicationPrimitiveDataTypes</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>Units</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>CompuMethods</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>DataConstrs</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>PhysicalDimensions</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>SwAddrMethods</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>SwBaseTypes</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+            <AR-PACKAGE>
+               <SHORT-NAME>SwRecordLayouts</SHORT-NAME>
+               <ELEMENTS>
+               </ELEMENTS>
+            </AR-PACKAGE>
+         </AR-PACKAGES>
+      </AR-PACKAGE>
+   </AR-PACKAGES>
+</AUTOSAR>
+
